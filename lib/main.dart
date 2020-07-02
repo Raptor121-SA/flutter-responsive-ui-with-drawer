@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'constants/route_names.dart';
+import 'helpers/app_route_observer.dart';
+import 'pages/home_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
           AppRouteObserver()
         ],
         routes: {
-          RouteNames.home: (_) => const HomePage(),
+          RouteNames.home: (_) => HomePage(),
         });
   }
 }
